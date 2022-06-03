@@ -2,6 +2,8 @@
 worker
 ======
 
+This is a test fork from Martin. All rights reserved by the actual developers. :)
+
 The Cellenics data analysis tasks executor. It consists of two containers: a Python container and an R container. For more details on the individual containers, check out the README files in their respective directories.
 
 The Python part of the worker is a wrapper around the R part: it receives tasks from the API, parses them, sends them to the R part for computation, then formats the results, uploads them to S3 and sends a notification to the API via Redis-backed socket connection that they are ready.
